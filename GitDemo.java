@@ -1,5 +1,5 @@
 /*****
- * Edit this line to have your name.
+ * Ethan Buranday
  ******/
 public class GitDemo {
     
@@ -15,6 +15,11 @@ public class GitDemo {
     public double addNumber(double num) {
         System.out.print("Add num to previousNumber");
         return 0;
+        
+        // Local variable sum, contains the sum of num and previousNumber
+        double sum = num + previousNumber;
+        return sum; // Return
+        
     }
     
     /*****
@@ -42,9 +47,15 @@ public class GitDemo {
     public double reverseNumber(int num){
         double newNumber = 1;
         
+        // Added local reverseNum local variable with data type double and it's private
+        private double reverseNum;
+            
         for(int i = 1; i <= num; ++i){
             newNumber = newNumber * i;
         }
+        
+        // reverseNum equals to newNumber
+        reverseNum = newNumber;
         
         return newNumber;
     }
